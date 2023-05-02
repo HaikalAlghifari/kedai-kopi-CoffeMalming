@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        text-align: center;
+      }
+      .biru-muda {
+        background-color: aqua;
+      }
+      .h1 {
+        color: red;
+      }
+      .kotakmerah {
+        height: 25px;
+        width: 25px;
+        margin: 10px auto;
+        background-color: red;
+      }
+      .kotakhijau {
+        height: 25px;
+        width: 25px;
+        margin: 10px auto;
+        background-color: green;
+      }
+      .kotakbiru {
+        height: 25px;
+        width: 25px;
+        margin: 10px auto;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bermain Dengan Warna</h1>
+    <button>Ganti warna</button>
+    <br /><br />
+    <div class="kotakmerah"></div>
+    <input type="range" name="merah" min="0" max="255" />
+    <div class="kotakhijau"></div>
+    <input type="range" name="hijau" min="0" max="255" />
+    <div class="kotakbiru"></div>
+    <input type="range" name="biru" min="0" max="255" />
+    <script src="../DOM JS/Latihan.js"></script>
+  </body>
+</html>

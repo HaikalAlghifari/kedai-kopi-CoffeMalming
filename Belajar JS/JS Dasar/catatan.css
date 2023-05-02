@@ -1,0 +1,237 @@
+/* 
+
+* TIPE DATA : 
+- Number = 1, -10, 1,3
+- String = 'hello' , "hello"
+- boolean
+- object
+- function
+- undefined 
+
+* di javascript tidak ada integer
+
+* OPERATOR : 
+- aritmatika = sama dengan c++
+- penugasan + sama dengan c++
+- perbandingan = sama dengan c++
+- logika = sama dengan c++
+- string = bisa menggunakan aritmatika + untuk string ( "10" + "10" )
+- kondisional
+- typeof = untuk mengetahui tipe data apa yang ada di dalam nilai yang kita inputkan
+ contoh :   typeof(10) = number
+            typeof("10") = string
+
+* string =
+ 
+
+* Variabel
+    - deklarasi = mendaftarkan varibel 
+    - inisialisasi = menyediakan memori untuk variabel
+    - assignment = menetapkan nilai untuk varibel
+
+
+* Pop Up Box ( mengembalikan nilai )
+    - alert
+    - prompt
+    - confirm
+
+             alert('selamat datang');
+            var lagi = true;
+            while (lagi) {
+            var nama = prompt('masukan nama ');
+            alert('halo ' + nama);
+
+            lagi = confirm('coba lagi?');
+            }
+
+            alert('terimakasih');
+
+
+* 
+var nilai = ..
+while (kondisi){
+    aksi
+    increment/decrement
+}
+
+
+* IF
+if (kondisi){
+    aksi
+}
+
+* SWITCH CASE
+switch (ekspresi){
+    case "nilai 1":
+    alert
+    break;
+    case "nilai 1":
+    alert
+    break;
+    default:
+    alert
+    break;
+
+
+* FUNCTION 
+    - struktur data pembentuk dari javascript
+    - kumpulan statement untuk melakukan tugas atau menghitung nilai
+    - termasuk ke dalam first class object
+
+    built-in function = fungsi yang sudah disiapkan oleh javascript.
+    built-in functon string = - charAt()
+                              - slice()
+                              - split()
+                              - toString()
+                              - toLowerCase()
+                              -toUpperCase()
+    built-in function math = - sin()
+                             - cos()
+                             - tan()
+                             - random ()
+                             - log()
+                             - round()
+
+    user-defined function = fungsi yang kita buat sendiri.
+    * function declaration : 
+    function jumlahduabilangan (a,b){
+        var total;
+        total = a+b;
+        
+        return total;
+    }
+
+    * function expression :
+    var jumlahduabilangan = function (a,b){
+        var total;
+        total a+b;
+
+        return total;
+    }
+
+    keyword function, nama function, parameter, function body, return value.
+
+    * FUNCTION DECLARATION : function identifier ( parameter list (opt) ) { function body }
+    * FUNCTION EXPRESSION : function identifier (opt) ( parameter list (opt) ) { function body }
+
+
+    function : 
+    - blok kode yang dibuat untuk melakukan tugas spesifik
+    - blok kode dapat dipanggil berulang kali
+    - memudahkan penelusuran
+    - reusability
+
+
+    * REFACTORING = penulisan efisiensi kode
+    contoh : 
+    function jumlahduakubus(a,b){
+        return a*a*a + b*b*b;
+    }
+    alert(jumlahduakubus(8,3));
+
+    * KURUNG KURAWAL TUTUP DAN KURUNG KURAWAL BUKA ADALAH BLOK SCOPE    
+
+* VAR, LET, CONST 
+    - Let dan Const menganut sistem block scope, yang mana cakupan variabelnya hanya bisa dikses di dalam block nya saja.
+    - Var menganut sistem functional scope, yang mana varibelnya dapat diakses dari dalam maupun luar block kecuali di luar function
+    - Data pada Let dan Var bisa di ubah, sedangkan Const tidak.
+
+* GLOBAL SCOPE / WINDOWS SCOPE, FUNCTION SCOPE, BLOCK SCOPE
+
+* REKURSIF : Sebuah fungsi yang memanggil dirinya sendiri secara berulang ulang.
+    contoh : function angka(n){
+        console.log(n);
+        return angka(n-1);
+    }
+    angka(10);
+
+    Cara menghentikannya (BASE CASE) : 
+    function angka(n){
+        if( n == 0 ){
+            return;   
+        }
+        console.log(n);
+        return angka(n-1);
+    }
+    angka(10);
+
+
+
+* ARRAY : - mempermudah pengolahan nilai / value / data
+          - manajemen memori
+          - index dimulai dari 0
+          - elemen pada array boleh memiliki tipe data berbeda
+          - kumpulan nilai yang memiliki index
+          - variabel yang lebih sakti
+        
+          contoh : var binatang = ['ayam', 1, false];
+
+        
+        Macam - macam METHOD khusus array di javascript : 
+         - .length = untuk mengetahui berapa jumlah elemen pada array
+         - .join = untuk menggabungkan seluruh isi array dan mengubahnya menjadi string
+         - .push = menambahkan elemen baru di paling belakang array
+         - .pop = menghapus elemen di paling belakang array
+         - .unshift = menambahkan elemen baru di paling depan array
+         - .shift = menghapus elemen di paling depan array
+         - .slice = digunakan untuk mengambil beberapa bagian pada array untuk menjadi array baru
+         - .splice = menyambung / meyisipkan elemen di tengah menggunakan slice
+         - .forEach = mempermudah perulangan sama seperti FOR
+         - .map = 
+         - .filter = mencari/mengembalikan banyak nilai pada array 
+         - .find = mencari/mengembalikan satu nilai pada array
+                        
+
+
+
+* OBJECT : - kumpulan nilai yang tidak memiliki index melainkan nama
+           - object adalah array yang lebih sakti
+           - bisa membuat object di dalam object
+
+           - object literal
+           - function declaration
+           - constructor function
+           - object.create()
+
+        * object literal
+
+            var mhs = {
+                nama: 'haikal',
+                umur: 20,
+                ips: [3.0, 3.2, 2.5, 1.5],
+                alamat: {
+                kota: 'tangerang',
+                provinsi: 'banten',
+                negara: 'indonesia',
+                }
+            };
+
+        * function declaration
+
+            function objectmahasiswa(nama, nim, fakultas) {
+                var mhs = {}; // deklarasi 
+                mhs.nama = nama;
+                mhs.nim = nim;
+                mhs.fakultas = fakultas;
+                return mhs; // dan return nya harus ada
+            };
+
+            var mhs = objectmahasiswa('haikal', 2004030020, 'teknik');
+            var mhs2 = objectmahasiswa('alghifari', 20020202, 'kimia');
+
+        * constructor function (diawali membuat function dngn huruf besar)
+
+            function Mahasiswa(nama, nim, fakultas) {
+                this.nama = nama;
+                this.nim = nim;
+                this.fakultas = fakultas;
+            }
+
+            var mhs4 = new mahasiswa('asd', 203283082, 'dokter');
+
+    THIS : - Adalah sebuah keyword spesial yang secara otomatis di definisikan pada setiap function / object
+           - secara default isi dari keyword THIS itu adalah windows
+           - THIS = windows / object global
+           - properti itu adalah variabel yang ada didalam object
+           - method adalah function yang ada di dalam object
+*/

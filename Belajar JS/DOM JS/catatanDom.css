@@ -1,0 +1,88 @@
+/* 
+
+DOM ( DOCUMENT OBJECT MODEL )
+    Merepresentasi element HTML pada dokument menjadi object 
+    Antarmuka pemrograman berbasis objek untuk merepresentasikan dokument web
+
+    Document : Area di dalam website / isi dari website
+    Object : adalah sebuah nilai atau tipe data yang ada dalam javascript
+    
+    - DOM tersimpan di dalam pohon hirarki DOM atau DOM tree
+    - DOM membuat seluruh komponen dari halaman web dapat diakses & manipulasi
+
+
+DOM TREE
+    - semua element nya di anggap sebagai node / simpul
+    - terdapat 2 tipe : - element node ( h1, p , div, a )
+                        - text node ( 'hello world', 'haikal'
+    - ketika kita memilih lebih dari 1 node, disebut nodeList. tidak peduli tipe node nya apa
+    - sedangkan HtmlCollection adalah kumpulan node tapi khusus yang tipe nya element html saja.
+    - HtmlCollection bersifat live sedangkan nodeList tidak
+
+    Struktur Hirarki DOM : 
+        - Root node : node yang menjadi sumber dari semua node lain di dalam DOM ( Document )
+        - Parent node : node yang berada 1 tingkat di atas node lain
+        - Child node : node yang berada 1 tingkat di bawah node lain
+
+
+DOM SELECTION 
+
+    - yang bisa di style yaitu element
+    - array tidak bisa di style, kecuali memanggil dengan index nya. [2]
+
+    METHOD : 
+    - getElementById()          hasil = element
+    - getElementsByTagName()    hasil = HtmlCollection
+    - getElementsByClassName()  hasil = HtmlCollection
+    - querySelector()           hasil = element
+    - querySelectorAll()        hasil = nodeList
+
+    
+DOM MANIPULATION
+
+    * Manipulation Element : 
+      - element.innerHtml()
+
+      - element.style <properti>
+
+      - element.setAttribute()
+        - setAtrribute() = menambahkan attribute
+        - getAttribute() = mengembalikan isi dari attribute yang di seleksi
+        - removeAttribute() = menghapus attribute
+        
+      - element.classList()
+        - classList.add() = menambahkan class
+        - classList.remove() = menghilangkan class yang ada
+        - classList.toggle() = menembahkan class tertentu jika tidak ada class
+        - classList.item() = untuk mengetahui class tertentu
+        - classList.contains() = mengecak class tertentu pada sebuah element
+        - classList.replace() = untuk mengganti class yang ada
+           
+    
+    * Manipulation Node
+      - document.createElement()
+      - document.createTextNode()
+      - node.appendChild() --- > simpan ke akhir element
+      - node.insertBefore()
+      - parentNode.removeChild()
+      - parentNode.replaceChild()
+
+
+
+EVENTS : 
+        Event pada JavaScript merepresentasikan sebuah kejadian yang terjadi di dalam DOM,
+        ..kejadian tersebut bisa dilakukan oleh user.
+
+        cara untuk menerapkan / mendengarkan event
+        1. Event Handler 
+          - inline HTML attribute
+          - Element Method
+        2. addEventListener()
+
+        PERBEDAAN : event handler & event listener
+        = perbedaan nya jika kita memberikan lebih dari 1 perubahan pada sebuah event.
+        = jika menggunakan event handler, perubahan yang terakhir dilakukan akan menimpah perubahan selanjutnya
+        = sedangkan eventlistener akan menambah perubahan nya
+
+
+*/

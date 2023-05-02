@@ -1,0 +1,32 @@
+/* body {
+  background-color: rgb(198, 198, 198);
+}
+.container {
+  width: 600px;
+  margin: 20px auto;
+  border: 5px solid white;
+  overflow: auto;
+}
+.thumb {
+  width: 200px;
+  float: left;
+  box-sizing: border-box;
+  border: 2px solid black;
+}
+.thumb:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+@keyframes fadein {
+  to {
+    opacity: 1;
+  }
+}
+.fade {
+  opacity: 0;
+  animation: fadein 0.5s forwards;
+}
+.active {
+  opacity: 0.5;
+} */
